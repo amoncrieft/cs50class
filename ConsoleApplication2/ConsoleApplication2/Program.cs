@@ -11,15 +11,16 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             int i = 0;
+            int sum = 0;
             do
             {
                 if (i % 3 == 0 || i % 5 == 0)
                 {
-                    i += i;
+                    sum += i;
                 }
                 i++;
-            } while (i <= 1000);
-            Console.WriteLine(i);
+            } while (i < 1000);
+            Console.WriteLine(sum);
             Console.ReadLine();
         }
     }
